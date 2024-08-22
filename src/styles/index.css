@@ -1,3 +1,88 @@
-/* 
-    General Styles
-*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.contact-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.contact-actions button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-actions button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-actions button:last-child {
+    background-color: #dc3545;
+}
+
+.contact-actions button:last-child:hover {
+    background-color: #c82333;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se dispongan verticalmente */
+    align-items: center; /* Opcional: centra los elementos horizontalmente */
+    margin: 20px;
+}
+
+.contact-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido de la tarjeta se disponga verticalmente */
+    align-items: center; /* Opcional: centra el contenido de la tarjeta horizontalmente */
+    margin: 10px;
+    padding: 20px;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.add-contact-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-contact-button:hover {
+    background-color: #0056b3;
+}

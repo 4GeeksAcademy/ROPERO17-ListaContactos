@@ -6,7 +6,7 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
-
+import AddContact from "./views/addcontact";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
@@ -22,6 +22,7 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Routes>
+					<Route path="/add-contact" element={<AddContact />} />
 						<Route path="/" element={<Home />} />
 						<Route path="/demo" element={<Demo />} />
 						<Route path="/single/:theid" element={<Single />} />
