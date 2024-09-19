@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { Context } from "../store/appContext";
 import "../../styles/addContact.css";
 
 const AddContact = () => {
+    const { actions } = useContext(Context);
     const [contact, setContact] = useState({
         name: "",
         email: "",
@@ -18,7 +20,7 @@ const AddContact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+        actions.addContact(contact);
         navigate("/");
     };
 
