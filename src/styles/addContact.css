@@ -27,8 +27,8 @@
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%; /* Asegura que los inputs ocupen todo el ancho */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 .add-contact-container button {
@@ -39,7 +39,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.2s; /* Efecto de transición suave */
+    transition: background-color 0.2s; 
 }
 
 .add-contact-container button:hover {
@@ -53,7 +53,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px; /* Para separar del formulario */
+    margin-top: 10px; 
 }
 
 .view-contacts-button:hover {

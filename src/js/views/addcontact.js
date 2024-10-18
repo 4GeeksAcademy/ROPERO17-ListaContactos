@@ -37,15 +37,15 @@ const AddContact = () => {
         })
         .then((response) => response.json())
         .then((data) => {
-            actions.addContact(data); // Agregar el contacto al contexto
-            navigate("/contacts"); // Redirigir a la vista de contactos
+            actions.addContact(data); 
+            navigate("/contacts"); 
         })
         .catch((error) => {
             console.log("Error al agregar contacto:", error);
         });
     };
 
-    // Función para redirigir a la vista de contactos
+   
     const verContactos = () => {
         navigate("/contacts");
     };

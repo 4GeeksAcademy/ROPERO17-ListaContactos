@@ -1,8 +1,8 @@
-import React, { useContext } from "react"; // Asegúrate de incluir useContext
+import React, { useContext } from "react"; 
 import ContactView from "./contactview";
 import "../../styles/home.css";
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext"; // Asegúrate de importar el contexto
+import { Context } from "../store/appContext"; 
 
 export const Home = () => {
   const { store } = useContext(Context); 

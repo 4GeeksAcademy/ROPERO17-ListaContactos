@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom"; // Importa useNavigate
+import { useNavigate } from "react-router-dom"; 
 import { Context } from "../store/appContext";
 import "../../styles/contactView.css";
 
@@ -25,20 +25,20 @@ const ContactView = () => {
 
         if (newName && newEmail && newPhone && newAddress) {
             const updatedContact = {
-                id, // Asegúrate de incluir el ID para la edición
+                id, 
                 full_name: newName,
                 email: newEmail,
                 phone: newPhone,
                 address: newAddress,
             };
-            actions.editContact(updatedContact); // Usar la acción para editar contacto
+            actions.editContact(updatedContact); 
         } else {
             alert("Todos los campos deben ser completados");
         }
     };
 
     const goToAddContact = () => {
-        navigate("/add-contact"); // Navegar a la ruta de agregar contacto
+        navigate("/add-contact"); 
     };
 
     return (
