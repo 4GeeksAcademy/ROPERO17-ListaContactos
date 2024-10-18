@@ -1,16 +1,16 @@
 .add-contact-container {
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 
 .add-contact-container h2 {
-    margin-bottom: 20px;
     text-align: center;
+    color: #333;
 }
 
 .add-contact-container form {
@@ -19,29 +19,43 @@
 }
 
 .add-contact-container label {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .add-contact-container input {
-    width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Asegura que los inputs ocupen todo el ancho */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
 
 .add-contact-container button {
-    background-color: #007bff;
+    padding: 10px;
+    background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s; /* Efecto de transición suave */
 }
 
 .add-contact-container button:hover {
+    background-color: #218838;
+}
+.view-contacts-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Para separar del formulario */
+}
+
+.view-contacts-button:hover {
     background-color: #0056b3;
 }

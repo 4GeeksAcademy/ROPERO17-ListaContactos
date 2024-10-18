@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
-	return {
+    return {
         store: {
-            contacts: [] 
+            contacts: [] // Inicialmente vacío
         },
         actions: {
             addContact: (contact) => {
@@ -25,6 +25,18 @@ const getState = ({ getStore, getActions, setStore }) => {
                             : contact
                     )
                 });
+            },
+            loadContacts: () => {
+                // Función para cargar contactos desde la API
+                fetch("https://playground.4geeks.com/apis/fake/contact/")
+                    .then((response) => response.json())
+                    .then((data) => {
+                        // Suponiendo que la API devuelve una lista de contactos
+                        setStore({ contacts: data });
+                    })
+                    .catch((error) => {
+                        console.error("Error al cargar contactos:", error);
+                    });
             }
         }
     };
